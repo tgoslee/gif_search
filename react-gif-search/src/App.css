@@ -3,18 +3,6 @@
     width: 90%;
 }
 
-.gif-item {
-    box-shadow: 2px 2px 4px 0 #ccc;
-    box-sizing: border-box;
-    display: inline-block;
-    margin: 0 0 1.5em;
-    padding: 1em;
-    width: 100%;
-}
-
-.gif-item img {
-    width: 100%;
-}
 
 .gif-list {
     column-gap: 1.5em;
@@ -29,7 +17,6 @@
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
-
 input {
     display: block;
     font-size: 22px;
@@ -37,6 +24,18 @@ input {
     margin: 0 auto;
     text-align: center;
     width: 50%;
+    outline: none;
+    border-color: #F90B6D;
+    box-shadow: 0 0 10px #F90B6D;
+}
+.title {
+    text-align: center;
+    color: #F90B6D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 10px 0 16px;
 }
 
 @media only screen and (min-width: 400px) {

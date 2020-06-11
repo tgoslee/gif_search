@@ -34,7 +34,7 @@ class App extends React.Component {
     }
 
     handleTermChange(term) {
-        const url = `http://api.giphy.com/v1/gifs/search?q=${term.replace(/\s/g, '+')}&api_key=dc6zaTOxFJmzC`;
+        const url = `http://api.giphy.com/v1/gifs/search?q=${term.replace(/\s/g, '+')}&api_key=U8K5DHAD7AvY6VVF3bFYXJ3HLzxQaot4`;
 
         request.get(url, (err, res) => {
             this.setState({ gifs: res.body.data })
@@ -43,6 +43,7 @@ class App extends React.Component {
   render(){
     return(
      <div>
+         <h1 className="title"> TAG <b>GIF</b> SEARCH</h1>
        <SearchBar onTermChange={term => this.handleTermChange(term)}/>
        <GifList
            gifs={this.state.gifs}

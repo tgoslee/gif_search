@@ -14,7 +14,7 @@ const GifModal = (props) => {
         <p><strong>Source:</strong> <a href={ props.selectedGif.source }>{ props.selectedGif.source }</a></p>
         <p><strong>Rating:</strong> { props.selectedGif.rating }</p>
 
-        <button onClick={() => props.onRequestClose()}>close</button>
+        <button onClick={() => props.onRequestClose()}>I want a different Gif!</button>
       </div>
     </Modal>
   );
